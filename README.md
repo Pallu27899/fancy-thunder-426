@@ -1,5 +1,5 @@
 # fancy-thunder-426
-Automated Student Registration System
+# Automated Student Registration System
 
 
 Problem Description:
