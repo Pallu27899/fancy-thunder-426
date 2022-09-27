@@ -5,11 +5,13 @@ Automated Student Registration System
 Problem Description:
 In a Educational Institute every year  technology trainings are conducted during summer and winter season. Students are enrolled in different courses under different technology track like- Android, Java ,JEE, PHP, Oracle etc. This automated application help Institute to enroll students efficiently, create batches under a course and allocates the students  in a batch . 
 
-The main user of the system : 
+The main user of the system :
+
 •	Administrator 
 •	Students.
 
 Roles for Administrator :
+
 	1. Add a new Courses
 	2. Update Fees of course.
 	3. Delete  a course from any Training session.
@@ -21,6 +23,7 @@ Roles for Administrator :
  
  
 Roles for a Student:
+
 	1. Register himself in a course with a username and password (email should be the username)
 	2. can update this details.
 	3. can see all the available course list and their seat availability.
