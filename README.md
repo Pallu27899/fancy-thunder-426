@@ -7,8 +7,9 @@ In a Educational Institute every year  technology trainings are conducted during
 
 The main user of the system :
 
-•	Administrator 
-•	Students.
+
+	•	Administrator 
+	•	Students.
 
 Roles for Administrator :
 
