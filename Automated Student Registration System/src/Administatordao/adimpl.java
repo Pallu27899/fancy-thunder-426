@@ -16,7 +16,7 @@ public class adimpl implements adintr{
 		
 	try (Connection conn=Db.connect()){
 			
-			PreparedStatement pst =conn.prepareStatement("select * from Accountant where username=? and password=?" );
+			PreparedStatement pst =conn.prepareStatement("select * from Administrator where username=? and password=?" );
 			pst.setString(1, name);
 			pst.setString(2, password);
 			
