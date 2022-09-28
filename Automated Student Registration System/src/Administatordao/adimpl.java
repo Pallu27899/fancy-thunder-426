@@ -6,7 +6,7 @@ import java.sql.ResultSet;
 
 import Exceptions.AdministratorException;
 import Utility.Db;
-//import exeptions.AccountantException;
+
 
 
 public class adimpl implements adintr{
