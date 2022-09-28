@@ -16,10 +16,10 @@ public class Db {
 			e.printStackTrace();
 		}
 		
-		String url="jdbc:mysql://localhost:3306/sb101db";
+		String url="jdbc:mysql://localhost:3306/fancythunder426";
 		
 		try {
-		 conn=DriverManager.getConnection(url, "root", "v1i2r3m4");
+		 conn=DriverManager.getConnection(url, "root", "Pallu@27899");
 			
 		} catch (SQLException e) {
 			// TODO Auto-generated catch block
