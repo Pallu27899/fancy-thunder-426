@@ -8,13 +8,9 @@ import java.util.ArrayList;
 import java.util.Scanner;
 
 public class main {
+		public static void main(String[] args) {	
+		
 
-	
-		public static void main(String[] args) {
-			
-		
-		
-		
 	 System.out.println("welcome to automatic Student registration System");
 		System.out.println("please select an option to  continue");
 		System.out.println("1 : login as a Administrator");
