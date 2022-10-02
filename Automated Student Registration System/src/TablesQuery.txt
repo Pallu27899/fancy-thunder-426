@@ -1,0 +1,137 @@
+
+mysql> create database fancythunder426;
+Query OK, 1 row affected (0.01 sec)
+
+mysql> use fancythunder426;
+Database changed
+mysql>
+___________________________________________________
+mysql> create table administrator (
+         id int primary key default 0,
+        username varchar(20) unique not null ,
+        password varchar(20) not null unique,
+        gender varchar(1) not null,
+        state varchar(20) not null);
+Query OK, 0 rows affected (0.35 sec)
+_______________________________________________________
+correct
+
+ create table Student(
+Sid int primary key auto_increment, 
+name Varchar(20) unique ,
+password varchar(20) not null,
+gender varchar(1) not null );
+
+_______________________________________________________________________
+correct
+
+create table Course(
+cid int primary key auto_increment, 
+Coursename Varchar(20) unique not null,
+ fees int not null, 
+duration_days int);
+
+________________________________________________________________
+correct
+
+create table Batch(
+Bno int primary key auto_increment , 
+cn2 varchar(20) not null, 
+seats int , 
+foreign key(cn2) references Course(coursename) );
+
+
+___________________________________________________________________-
+correct
+
+create table student_batch(
+sid2 int,
+bno2 int,
+foreign key(sid2) references Student(sid),
+foreign key(bno2) references Batch(bno)
+);
+
+
+
+
+
+mysql> show tables;
++-----------------+
+| Tables_in_sb101 |
++-----------------+
+| administrator   |
+| batch           |
+| course          |
+| student         |
+| student_batch   |
++-----------------+
+5 rows in set (0.00 sec)
+
+
+mysql> desc administrator;
++----------+-------------+------+-----+---------+-------+
+| Field    | Type        | Null | Key | Default | Extra |
++----------+-------------+------+-----+---------+-------+
+| id       | int         | NO   | PRI | 0       |       |
+| username | varchar(20) | NO   | UNI | NULL    |       |
+| password | varchar(20) | NO   | UNI | NULL    |       |
+| gender   | varchar(1)  | NO   |     | NULL    |       |
+| state    | varchar(20) | NO   |     | NULL    |       |
++----------+-------------+------+-----+---------+-------+
+5 rows in set (0.00 sec)
+
+mysql>
+
+mysql> desc student_batch;
++-------+------+------+-----+---------+-------+
+| Field | Type | Null | Key | Default | Extra |
++-------+------+------+-----+---------+-------+
+| sid2  | int  | YES  | MUL | NULL    |       |
+| bno2  | int  | YES  | MUL | NULL    |       |
++-------+------+------+-----+---------+-------+
+2 rows in set (0.01 sec)
+
+mysql> desc student;
++----------+-------------+------+-----+---------+----------------+
+| Field    | Type        | Null | Key | Default | Extra          |
++----------+-------------+------+-----+---------+----------------+
+| Sid      | int         | NO   | PRI | NULL    | auto_increment |
+| name     | varchar(20) | YES  | UNI | NULL    |                |
+| password | varchar(20) | NO   |     | NULL    |                |
+| gender   | varchar(1)  | NO   |     | NULL    |                |
++----------+-------------+------+-----+---------+----------------+
+4 rows in set (0.00 sec)
+
+mysql> desc course;
++---------------+-------------+------+-----+---------+----------------+
+| Field         | Type        | Null | Key | Default | Extra          |
++---------------+-------------+------+-----+---------+----------------+
+| cid           | int         | NO   | PRI | NULL    | auto_increment |
+| Coursename    | varchar(20) | NO   | UNI | NULL    |                |
+| fees          | int         | NO   |     | NULL    |                |
+| duration_days | int         | YES  |     | NULL    |                |
++---------------+-------------+------+-----+---------+----------------+
+4 rows in set (0.01 sec)
+
+mysql> desc batch;
++-------+-------------+------+-----+---------+----------------+
+| Field | Type        | Null | Key | Default | Extra          |
++-------+-------------+------+-----+---------+----------------+
+| Bno   | int         | NO   | PRI | NULL    | auto_increment |
+| cn2   | varchar(20) | NO   | MUL | NULL    |                |
+| seats | int         | YES  |     | NULL    |                |
++-------+-------------+------+-----+---------+----------------+
+3 rows in set (0.01 sec)
+
+mysql>
+
+
+
+
+
+
+
+
+
+
+
